@@ -1,48 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <title>time</title>
-  <style>
-    html, body {
-      width: 100%;
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
-    html {
-      display: table;
-    }
-    body {
-      color: white;
-      background-color: black;
-      display: table-cell;
-      text-align: center;
-      vertical-align: middle;
-      font-size: 28vmin;
-    }
-  </style>
-  <script>
-    function twoDigit(num) {
-      let ret;
-      if( num < 10 ) 
-        ret = "0" + num; 
-      else 
-        ret = num; 
-      return ret;
-    }
-    function showClock() {
-      let nowTime = new Date();
-      let nowHour = twoDigit( nowTime.getHours() );
-      let nowMin  = twoDigit( nowTime.getMinutes() );
-      let nowSec  = twoDigit( nowTime.getSeconds() );
-      let msg = nowHour + ":" + nowMin + ":" + nowSec;
-      document.getElementById("realtime").innerHTML = msg;
-    }
-    setInterval('showClock()',1000);
-  </script>
+<meta charset="UTF-8">
+<title>index.html</title>
 </head>
 <body>
-  <p id="realtime"></p>
+<h1>index.html</h1>
+<p>リンク貼り付け テスト</p>
 </body>
 </html>
